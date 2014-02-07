@@ -6,6 +6,7 @@ cache/
 files/
 sites/*/files
 sites/*/private
+www/*
 
 # Ignore default text files
 .htaccess
@@ -35,4 +36,3 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
-/www
