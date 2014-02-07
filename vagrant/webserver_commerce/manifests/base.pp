@@ -334,11 +334,6 @@ class commerce_kickstart {
     require => [Service['mysql']]
   }
 
-  exec{ "ngix_restart":
-    command => '/etc/init.d/nginx restart',
-    require => Exec['install-commerce-kickstart']
-  }
-
   info("this is info. visible only with -v or --verbose or -d or --debug")
   # notice{"Site instalado com sucesso! Usuário: admin / Senha: admin":
   #   require => [Exec['install-commerce-kickstart']]
