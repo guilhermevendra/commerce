@@ -1,4 +1,0 @@
-commerce-kickstart
-==================
-
-commerce kickstart
