@@ -307,6 +307,7 @@ class commerce_kickstart {
     cwd     => '/var/www/',
     command => "drush dl commerce_kickstart --drupal-project-rename=commerce_kickstart",
     onlyif  => "/usr/bin/test ! -d /var/www/commerce_kickstart",
+    timeout => 0,
     require => [ Exec['git-drush'], Service['php-fastcgi']]
   }
 
